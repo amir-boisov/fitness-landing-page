@@ -1,0 +1,116 @@
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+    &-wrapper {
+        margin-top: 1.25em;
+        width: 90%;
+        background: $background-color;
+        color: $primary-color;
+        display: flex;
+        justify-content: space-between;
+
+        .navigation-links {
+            width: 50%;
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+
+            .link a {
+                text-decoration: none;
+                color: $primary-color;
+                text-transform: uppercase;
+                font-size: $small;
+            }
+
+            .link a:hover {
+                background: none;
+                color: rgb(1, 223, 223);
+            }
+
+            .cross,
+            .icons i {
+                font-size: 1.5rem;
+                display: none;
+                cursor: pointer;
+            }
+
+            .fa-facebook:hover {
+                color: $primary-color;
+                opacity: 70%;
+            }
+            .fa-instagram:hover {
+                color: $primary-color;
+                opacity: 70%;
+            }
+            .fa-twitter:hover {
+                color: $primary-color;
+                opacity: 70%;
+            }
+        }
+
+        .bars {
+            font-size: 1.5rem;
+            display: none;
+            cursor: pointer;
+        }
+
+        .navigation-title {
+            width: 20%;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 675px) {
+    .navigation-wrapper {
+        align-items: center;
+        justify-content: center;
+
+        .navigation-links {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            z-index: 20;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: $background-color;
+            transition: top 1s ease-in-out;
+            display: none;
+
+            .link {
+                margin-bottom: 1em;
+            }
+
+            .hamburger.cross {
+                display: block;
+                position: absolute;
+                top: 1em;
+                right: 1em;
+            }
+
+            .icons i {
+                display: inline-block;
+                padding: 0.75em;
+            }
+        }
+
+        .hamburger.bars {
+            display: block;
+            position: absolute;
+            right: 1em;
+        }
+
+        .navigation-links li a:hover {
+            background: none;
+            color: rgb(0, 190, 190);
+        }
+
+        .navigation-title {
+            width: 100%;
+        }
+    }
+}

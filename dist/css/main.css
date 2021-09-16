@@ -206,6 +206,7 @@ main {
   border-radius: 10px;
   border: none;
   text-align: center;
+  cursor: pointer;
 }
 
 .section-1-wrapper .section-1 .section-buttons .section-button a {
@@ -213,12 +214,16 @@ main {
   color: white;
 }
 
+.section-1-wrapper .section-1 .section-buttons .section-button:active {
+  transform: scale(90%);
+}
+
 .section-1-wrapper .section-1 .section-buttons .first-button {
   background: #25ab75;
   margin-right: 1em;
 }
 
-.section-1-wrapper .section-1 .section-buttons .first-button:hover {
+.section-1-wrapper .section-1 .section-buttons .first-button:hover, .section-1-wrapper .section-1 .section-buttons .first-button:focus {
   transition: 0.25s ease-in;
   background: #28d48f;
 }
@@ -359,6 +364,10 @@ main {
   background: rgba(255, 255, 255, 0.08);
 }
 
+.section-2-wrapper .blocks-container .block:active {
+  transform: scale(90%);
+}
+
 .section-3-wrapper {
   display: flex;
   justify-content: center;
@@ -452,6 +461,10 @@ main {
   background: #28d48f;
 }
 
+.section-3-wrapper .column-2 .par-button .section-3-button:active {
+  transform: scale(90%);
+}
+
 .section-3-wrapper .column-2 .working-out-man {
   width: 100%;
   max-width: 500px;
@@ -488,6 +501,10 @@ main {
 .section-4-wrapper .menu-block:hover, .section-4-wrapper .menu-block:focus {
   transition: 0.35s ease-in;
   background: rgba(255, 255, 255, 0.1);
+}
+
+.section-4-wrapper .menu-block:active {
+  transform: scale(95%);
 }
 
 .section-4-wrapper .menu-block .menu-number {

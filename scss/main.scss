@@ -87,10 +87,15 @@ main {
                 border-radius: 10px;
                 border: none;
                 text-align: center;
+                cursor: pointer;
 
                 a {
                     text-decoration: none;
                     color: $primary-color;
+                }
+
+                &:active {
+                    transform: scale(90%);
                 }
             }
 
@@ -98,7 +103,8 @@ main {
                 background: $button-color;
                 margin-right: 1em;
 
-                &:hover {
+                &:hover,
+                &:focus {
                     transition: 0.25s ease-in;
                     background: rgb(40, 212, 143);
                 }
@@ -235,6 +241,10 @@ main {
 
                 background: rgba(255, 255, 255, 0.08);
             }
+
+            &:active {
+                transform: scale(90%);
+            }
         }
     }
 }
@@ -323,6 +333,10 @@ main {
                     transition: 0.25s ease-in;
                     background: rgb(40, 212, 143);
                 }
+
+                &:active {
+                    transform: scale(90%);
+                }
             }
         }
 
@@ -362,6 +376,10 @@ main {
         &:focus {
             transition: 0.35s ease-in;
             background: rgba(255, 255, 255, 0.1);
+        }
+
+        &:active {
+            transform: scale(95%);
         }
 
         .menu-number {

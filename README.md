@@ -18,4 +18,5 @@ https://www.figma.com/file/KryDtc08SC48m25tcvsK1k/Fitness-Landing-Page-Copy?node
 
 ---
 
-В ближайшее время залью на GitHub Pages полный функционирующий сайт.
+#Превью:
+https://fitness-landing.netlify.app/

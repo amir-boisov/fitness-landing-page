@@ -95,6 +95,7 @@ main {
                 }
 
                 &:active {
+                    transition: 0.25s ease-in-out;
                     transform: scale(90%);
                 }
             }
@@ -103,9 +104,8 @@ main {
                 background: $button-color;
                 margin-right: 1em;
 
-                &:hover,
-                &:focus {
-                    transition: 0.25s ease-in;
+                &:hover {
+                    transition: 0.25s ease-in-out;
                     background: rgb(40, 212, 143);
                 }
             }
@@ -114,7 +114,7 @@ main {
                 background: rgba(255, 255, 255, 0.1);
 
                 &:hover {
-                    transition: 0.25s ease-in;
+                    transition: 0.25s ease-in-out;
                     background: rgba(255, 255, 255, 0.2);
                 }
             }

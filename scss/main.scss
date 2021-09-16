@@ -374,12 +374,13 @@ main {
 
         &:hover,
         &:focus {
-            transition: 0.35s ease-in;
+            transition: 0.25s ease-in;
             background: rgba(255, 255, 255, 0.1);
         }
 
         &:active {
-            transform: scale(95%);
+            background: rgba(255, 255, 255, 0.1);
+            transform: scale(90%);
         }
 
         .menu-number {

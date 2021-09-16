@@ -97,10 +97,20 @@ main {
             .first-button {
                 background: $button-color;
                 margin-right: 1em;
+
+                &:hover {
+                    transition: 0.25s ease-in;
+                    background: rgb(40, 212, 143);
+                }
             }
 
             .second-button {
                 background: rgba(255, 255, 255, 0.1);
+
+                &:hover {
+                    transition: 0.25s ease-in;
+                    background: rgba(255, 255, 255, 0.2);
+                }
             }
         }
     }
@@ -175,7 +185,15 @@ main {
         }
 
         p {
-            font-size: 0.65rem;
+            a {
+                text-decoration: none;
+                color: $primary-color;
+                font-size: 0.65rem;
+
+                &:hover {
+                    color: rgba(255, 255, 255, 0.75);
+                }
+            }
         }
     }
 
@@ -209,6 +227,13 @@ main {
 
             .block-cal {
                 padding: 0 0.5em;
+            }
+
+            &:hover {
+                transition: 0.35s ease-in-out;
+                transform: scale(95%);
+
+                background: rgba(255, 255, 255, 0.08);
             }
         }
     }
@@ -245,6 +270,10 @@ main {
             object-position: center;
             border-radius: 10px;
             margin-bottom: 1.5em;
+            &:hover {
+                transition: 0.5s ease-in;
+                transform: scale(95%);
+            }
         }
 
         .running {
@@ -255,6 +284,10 @@ main {
             height: auto;
             object-position: center;
             border-radius: 10px;
+            &:hover {
+                transition: 0.5s ease-in;
+                transform: scale(95%);
+            }
         }
     }
 
@@ -279,10 +312,16 @@ main {
                 text-align: center;
                 background: $button-color;
                 text-align: center;
+                cursor: pointer;
                 a {
                     text-decoration: none;
                     color: $primary-color;
                     font-size: 1em;
+                }
+
+                &:hover {
+                    transition: 0.25s ease-in;
+                    background: rgb(40, 212, 143);
                 }
             }
         }
@@ -293,6 +332,11 @@ main {
             height: auto;
             object-fit: cover;
             object-position: center;
+
+            &:hover {
+                transition: 0.5s ease-in;
+                transform: scale(95%);
+            }
         }
     }
 }
@@ -311,6 +355,14 @@ main {
         border-bottom: 1px solid $primary-color;
         padding: 1em 0;
         margin-bottom: 2em;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            transition: 0.35s ease-in;
+            background: rgba(255, 255, 255, 0.1);
+        }
 
         .menu-number {
             width: 4%;

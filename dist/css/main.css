@@ -218,8 +218,18 @@ main {
   margin-right: 1em;
 }
 
+.section-1-wrapper .section-1 .section-buttons .first-button:hover {
+  transition: 0.25s ease-in;
+  background: #28d48f;
+}
+
 .section-1-wrapper .section-1 .section-buttons .second-button {
   background: rgba(255, 255, 255, 0.1);
+}
+
+.section-1-wrapper .section-1 .section-buttons .second-button:hover {
+  transition: 0.25s ease-in;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .section-1-wrapper .section-image {
@@ -296,8 +306,14 @@ main {
   font-size: 1rem;
 }
 
-.section-2-wrapper .section-2-info p {
+.section-2-wrapper .section-2-info p a {
+  text-decoration: none;
+  color: white;
   font-size: 0.65rem;
+}
+
+.section-2-wrapper .section-2-info p a:hover {
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .section-2-wrapper .blocks-container {
@@ -337,6 +353,12 @@ main {
   padding: 0 0.5em;
 }
 
+.section-2-wrapper .blocks-container .block:hover {
+  transition: 0.35s ease-in-out;
+  transform: scale(95%);
+  background: rgba(255, 255, 255, 0.08);
+}
+
 .section-3-wrapper {
   display: flex;
   justify-content: center;
@@ -372,6 +394,11 @@ main {
   margin-bottom: 1.5em;
 }
 
+.section-3-wrapper .column-1 .medit:hover {
+  transition: 0.5s ease-in;
+  transform: scale(95%);
+}
+
 .section-3-wrapper .column-1 .running {
   position: relative;
   left: 7em;
@@ -380,6 +407,11 @@ main {
   height: auto;
   object-position: center;
   border-radius: 10px;
+}
+
+.section-3-wrapper .column-1 .running:hover {
+  transition: 0.5s ease-in;
+  transform: scale(95%);
 }
 
 .section-3-wrapper .column-2 {
@@ -406,6 +438,7 @@ main {
   text-align: center;
   background: #25ab75;
   text-align: center;
+  cursor: pointer;
 }
 
 .section-3-wrapper .column-2 .par-button .section-3-button a {
@@ -414,12 +447,22 @@ main {
   font-size: 1em;
 }
 
+.section-3-wrapper .column-2 .par-button .section-3-button:hover {
+  transition: 0.25s ease-in;
+  background: #28d48f;
+}
+
 .section-3-wrapper .column-2 .working-out-man {
   width: 100%;
   max-width: 500px;
   height: auto;
   object-fit: cover;
   object-position: center;
+}
+
+.section-3-wrapper .column-2 .working-out-man:hover {
+  transition: 0.5s ease-in;
+  transform: scale(95%);
 }
 
 .section-4-wrapper {
@@ -438,6 +481,13 @@ main {
   border-bottom: 1px solid white;
   padding: 1em 0;
   margin-bottom: 2em;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.section-4-wrapper .menu-block:hover, .section-4-wrapper .menu-block:focus {
+  transition: 0.35s ease-in;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .section-4-wrapper .menu-block .menu-number {

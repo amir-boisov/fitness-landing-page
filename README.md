@@ -18,5 +18,5 @@ https://www.figma.com/file/KryDtc08SC48m25tcvsK1k/Fitness-Landing-Page-Copy?node
 
 ---
 
-#Превью:
+# Превью:
 https://fitness-landing.netlify.app/
